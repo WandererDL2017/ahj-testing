@@ -25,6 +25,12 @@ function findAllActivePayment(namePayment) {
   });
 }
 
+function ActivePayment() {
+  Array.from(paymentMethods).forEach((payment) => {
+    payment.classList.remove('payment-method__img_disabled');
+  });
+}
+
 Array.from(paymentMethods).forEach((payment) => {
   inputNumber.addEventListener('input', () => {
     const number = inputNumber.value;
@@ -56,9 +62,11 @@ button.addEventListener('click', (e) => {
     textValidation.className = 'valid-message';
     textValidation.innerHTML = 'valid card number';
     inputNumber.value = '';
+    ActivePayment();
   } else {
     textValidation.className = 'error-message';
     textValidation.textContent = 'invalid card number';
     inputNumber.value = '';
+    ActivePayment();
   }
 });
