@@ -24,4 +24,27 @@
   margin: 5px 0;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
+}
+
+.example_card__table {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+}
+
+.table__row {
+  padding: 5px 10px;
+  border: 1px solid #000000;
+}
+
+.text-validation {
+  margin-left: 10px;
+}
+
+.valid-message {
+  color: #5900ff
+}
+
+.error-message {
+  color: #ff0000;
 }
