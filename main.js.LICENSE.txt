@@ -1,0 +1,10 @@
+/**
+ * @license
+ * aec.png
+ * d.png
+ * dc.png
+ * jcb.png
+ * mc.png
+ * mir.png
+ * visa.png
+ */
